@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Ejercicios</title>
+
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/a.jpg" alt="Descripción de la imagen" class="full-screen-img">
+    <h1>Menú de Ejercicios</h1>
+    <div class="menu">
+        <div class="menu-item">
+            <button onclick="toggleSubmenu('submenu-ejercicios')">Arreglos y Cálculos</button>
+            <div id="submenu-ejercicios" class="submenu">
+                <a href="1.dado un arreglo de 10 numeros.html">1. Dado un arreglo de 10 números</a>
+                <a href="2.promedio de calificaciones.html">2. Promedio de calificaciones</a>
+                <a href="3.encontrar el maximo de una lista.html">3. Encontrar el máximo de una lista de números</a>
+                <a href="4.encontrar el promedio de numeros mayores.html">4. Encontrar el promedio de números mayores a un valor dado</a>
+                <a href="5.encontrar el minimo de un arreglo.html">5. Encontrar el mínimo de un arreglo de números</a>
+                <a href="6.promedio de numeros pares.html">6. Promedio de números pares de un arreglo</a>
+                <a href="7.arreglo suma digitos.html">7. Arreglo suma dígitos</a>
+                <a href="8.contar y sumar numeros positivos.html">8. Contar y sumar números positivos y negativos</a>
+                <a href="9.dado un arreglo de numeros.html">9. Dado un arreglo de números crear otro arreglo con el cuadrado de cada elemento</a>
+                <a href="10.dado dos arreglos.html">10. Dado dos arreglos, crear otro arreglo con la suma de cada elemento</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function toggleSubmenu(id) {
+        const submenu = document.getElementById(id);
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de números pares</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/a.jpg" alt="Descripción de la imagen" class="full-screen-img">
+    <main>
+        <h1>Suma de números pares</h1>
+        <form>
+            <div>
+                <label for="numero">Número</label>
+                <input type="number" id="numero" placeholder="Ingrese un número">
+            </div>
+            <div>
+                <label for="resultado">Resultado</label>
+                <textarea class="form-control bg-light text-primary border-primary shadow-lg p-3 rounded" id="resultado" placeholder="Aquí va la respuesta..." readonly></textarea>
+            </div>
+            <button onclick="calcularSumaPares()" type="button">Calcular Suma</button>
+            <button type="button" onclick="resetForm3()">Resetear</button>
+        </form>
+    </main>
+    <script src="/js/numeros.js"></script>
+</body>
+</html>

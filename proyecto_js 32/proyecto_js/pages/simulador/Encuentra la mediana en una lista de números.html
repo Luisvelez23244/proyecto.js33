@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar la Mediana de una Lista de Números</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <!-- Título de la pregunta -->
+        <h2 class="text-center">📏 Encontrar la Mediana de una Lista de Números 📏</h2>
+
+        <!-- Mostrar el algoritmo -->
+        <pre class="bg-primary-subtle p-1 border rounded text-primary-emphasis">
+            function encontrarMediana(arr) {
+            1.   arr.sort((a, b) => a - b);
+            2.   const mitad = Math.floor(arr.length / 2);
+            3.   if (arr.length % 2 === 0) {
+            4.       return (arr[mitad - 1] + arr[mitad]) / 2;
+            5.   } else {
+            6.       return arr[mitad];
+            7.   }
+            }</pre>
+
+        <h4 class="text-center text-primary-emphasis">¿Cuál línea encuentra correctamente la mediana de una lista de números?</h4>
+        
+        <!-- Formulario con las opciones de respuesta -->
+        <form id="formularioPregunta" class="d-flex align-items-center justify-content-center">
+            <div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion1" value="1">
+                    <label class="form-check-label" for="opcion1">a) Línea 1</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion2" value="4">
+                    <label class="form-check-label" for="opcion2">b) Línea 4</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion3" value="6">
+                    <label class="form-check-label" for="opcion3">c) Línea 6</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion4" value="2">
+                    <label class="form-check-label" for="opcion4">d) Línea 2</label>
+                </div>
+                <!-- Botón para verificar la respuesta -->
+                <button type="button" class="btn btn-primary mt-3" onclick="verificarRespuesta9()">Aceptar</button>
+                <button class="btn btn-danger text-white mt-3" type="button" onclick="resetForm43()">Resetear</button>
+            </div>
+            <!-- Sección para mostrar el resultado al mismo nivel de las opciones -->
+            <div id="resultado" class="resultado ms-5 h4"></div>
+        </form>
+    </div>
+
+    <!-- Código JavaScript para evaluar la respuesta -->
+    <script src="/js/encontrarMediana.js"> </script>
+</body>
+</html>

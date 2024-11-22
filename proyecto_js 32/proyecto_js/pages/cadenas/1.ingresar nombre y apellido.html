@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar Nombre y Apellido</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/a.jpg" alt="Descripción de la imagen" class="full-screen-img">
+    <main>
+        <h1>Concatenar Nombre y Apellido</h1>
+        <form>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ingrese su apellido">
+            </div>
+            <div>
+                <label for="resultado">Resultado</label>
+                <textarea class="form-control bg-light text-primary border-primary shadow-lg p-3 rounded" id="resultado" placeholder="Aquí va la respuesta..." readonly></textarea>
+            </div>
+            <button onclick="concatenarNombreApellido()" type="button">Concatenar</button>
+            <button type="button" onclick="resetForm16()">Resetear</button>
+        </form>
+    </main>
+    <script src="/js/cadenas.js"></script>
+</body>
+</html>

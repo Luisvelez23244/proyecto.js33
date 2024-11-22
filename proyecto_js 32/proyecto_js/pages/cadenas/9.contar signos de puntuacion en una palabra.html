@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar Signos de Puntuación</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/a.jpg" alt="Descripción de la imagen" class="full-screen-img">
+    <main>
+        <h1>Contar Signos de Puntuación</h1>
+        <form>
+            <div>
+                <label for="palabra">Palabra</label>
+                <input type="text" id="palabra" placeholder="Ingrese una palabra">
+            </div>
+            <div>
+                <label for="resultado">Resultado</label>
+                <textarea class="form-control bg-light text-primary border-primary shadow-lg p-3 rounded" id="resultado" placeholder="Aquí va el conteo de signos de puntuación..." readonly></textarea>
+            </div>
+            <button onclick="contarSignosPuntuacion()" type="button">Contar Signos</button>
+            <button type="button" onclick="resetForm24()">Resetear</button>
+        </form>
+    </main>
+    <script src="/js/cadenas.js"></script>
+</body>
+</html>

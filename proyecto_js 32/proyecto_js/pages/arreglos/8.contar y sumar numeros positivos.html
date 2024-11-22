@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar y Sumar Números Positivos y Negativos</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/a.jpg" alt="Descripción de la imagen" class="full-screen-img">
+    <main>
+        <h1>Contar y Sumar Números Positivos y Negativos</h1>
+        <form>
+            <div>
+                <label for="numeros">Números</label>
+                <input type="text" id="numeros" placeholder="Ingrese una lista de 10 números separados por comas">
+            </div>
+            <div>
+                <label for="resultado">Resultado</label>
+                <textarea class="form-control bg-light text-primary border-primary shadow-lg p-3 rounded" id="resultado" placeholder="Aquí va el conteo y suma..." readonly></textarea>
+            </div>
+            <button onclick="contarSumarPositivosNegativos()" type="button">Contar y Sumar</button>
+            <button type="button" onclick="resetForm33()">Resetear</button>
+        </form>
+    </main>
+    <script src="/js/arreglos.js"></script>
+</body>
+</html>

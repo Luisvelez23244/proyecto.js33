@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Frases</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/a.jpg" alt="Descripción de la imagen" class="full-screen-img">
+    <main>
+        <h1>Comparar Frases</h1>
+        <form>
+            <div>
+                <label for="frase1">Frase 1</label>
+                <input type="text" id="frase1" placeholder="Ingrese la primera frase">
+            </div>
+            <div>
+                <label for="frase2">Frase 2</label>
+                <input type="text" id="frase2" placeholder="Ingrese la segunda frase">
+            </div>
+            <div>
+                <label for="resultado">Resultado</label>
+                <textarea class="form-control bg-light text-primary border-primary shadow-lg p-3 rounded" id="resultado" placeholder="Aquí va la respuesta..." readonly></textarea>
+            </div>
+            <button onclick="compararFrases()" type="button">Comparar</button>
+            <button type="button" onclick="resetForm17()">Resetear</button>
+        </form>
+    </main>
+    <script src="/js/cadenas.js"></script>
+</body>
+</html>

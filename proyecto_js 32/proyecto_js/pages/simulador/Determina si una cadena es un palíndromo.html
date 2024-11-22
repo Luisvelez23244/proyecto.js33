@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar si una Cadena es un Palíndromo</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <!-- Título de la pregunta -->
+        <h2 class="text-center">🔄 Determinar si una Cadena es un Palíndromo 🔄</h2>
+
+        <!-- Mostrar el algoritmo -->
+        <pre class="bg-primary-subtle p-1 border rounded text-primary-emphasis">
+            function esPalindromo(cadena) {
+            1.   const cadenaLimpia = cadena.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+            2.   const cadenaInvertida = cadenaLimpia.split('').reverse().join('');
+            3.   return cadenaLimpia === cadenaInvertida;
+            }</pre>
+
+        <h4 class="text-center text-primary-emphasis">¿Cuál línea determina correctamente si una cadena es un palíndromo?</h4>
+        
+        <!-- Formulario con las opciones de respuesta -->
+        <form id="formularioPregunta" class="d-flex align-items-center justify-content-center">
+            <div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion1" value="1">
+                    <label class="form-check-label" for="opcion1">a) Línea 1</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion2" value="2">
+                    <label class="form-check-label" for="opcion2">b) Línea 2</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion3" value="3">
+                    <label class="form-check-label" for="opcion3">c) Línea 3</label>
+                </div>
+                <div class="form-check mb-1 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="radio" name="respuesta" id="opcion4" value="4">
+                    <label class="form-check-label" for="opcion4">d) Línea 4</label>
+                </div>
+                <!-- Botón para verificar la respuesta -->
+                <button type="button" class="btn btn-primary mt-3" onclick="verificarRespuesta8()">Aceptar</button>
+                <button class="btn btn-danger text-white mt-3" type="button" onclick="resetForm42()">Resetear</button>
+            </div>
+            <!-- Sección para mostrar el resultado al mismo nivel de las opciones -->
+            <div id="resultado" class="resultado ms-5 h4"></div>
+        </form>
+    </div>
+
+    <!-- Código JavaScript para evaluar la respuesta -->
+    <script src="/js/simulador.js"> </script>
+</body>
+</html>
